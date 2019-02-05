@@ -3,5 +3,4 @@ sudo: required
 services: docker
 before_install:
   - sudo apt-get update
-  - npm install npm@latest -g
 script: echo "hello world" 
