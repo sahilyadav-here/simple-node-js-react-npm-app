@@ -3,4 +3,6 @@ sudo: required
 services: docker
 before_install:
   - sudo apt-get update
+  - nvm install 10.15.1
+  - nvm use 10.15.1
 script: echo "hello world" 
