@@ -1,8 +1,10 @@
 language: node_js
 sudo: required
 services: docker
+addons:
+  apt:
+    update: true
 before_install:
-  - sudo apt-get update
   - nvm install 10.15.1
   - nvm use 10.15.1
-script: echo "hello world" 
+script: ./jenkins/scripts/test.s 
