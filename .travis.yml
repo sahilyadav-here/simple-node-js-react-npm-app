@@ -3,5 +3,10 @@ sudo: required
 services: docker
 before_install:
   - sudo apt-get update
+  - sudo npm cache clean -f
+  - sudo npm install -g n
+  - sudo n stable
+  - npm install npm@latest -g
+  - sudo npm install sync-exec
   - sudo npm install uglifyjs-webpack-plugin --save-dev
 script: echo "hello world" 
