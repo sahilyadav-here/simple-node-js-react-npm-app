@@ -12,4 +12,6 @@ The `jenkins` directory contains an example of the `Jenkinsfile` (i.e. Pipeline)
 you'll be creating yourself during the tutorial and the `scripts` subdirectory
 contains shell scripts with commands that are executed when Jenkins processes
 the "Test" and "Deliver" stages of your Pipeline.
-test
+
+Master Build Status - 
+[![Build Status](https://travis-ci.org/sahilyadav-here/simple-node-js-react-npm-app.svg?branch=master)](https://travis-ci.org/sahilyadav-here/simple-node-js-react-npm-app)
