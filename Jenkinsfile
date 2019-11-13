@@ -9,12 +9,12 @@ pipeline {
         CI = 'true'
     }
     stages {
-        stage('installdeps') {
-            steps {
-                // sh 'npm install'
-                // sh 'npm run bower'
-            }
-        }
+        // stage('installdeps') {
+        //     steps {
+        //         // sh 'npm install'
+        //         // sh 'npm run bower'
+        //     }
+        // }
         stage('build') {
             steps {
                 sh 'printenv'
