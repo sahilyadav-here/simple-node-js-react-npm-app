@@ -5,16 +5,13 @@ pipeline {
             args '-p 3000:3000'
         }
     }
-    environment { 
-        CI = 'true'
-    }
     stages {
-        // stage('installdeps') {
-        //     steps {
-        //         // sh 'npm install'
-        //         // sh 'npm run bower'
-        //     }
-        // }
+        stage('installdeps') {
+            steps {
+                sh 'npm install'
+                // sh 'npm run bower'
+            }
+        }
         stage('build') {
             steps {
                 sh 'printenv'
