@@ -6,12 +6,19 @@ pipeline {
         }
     }
     environment { 
-        npm_config_cache = 'npm-cache'
+        CI = 'true'
     }
     stages {
-        stage('Build') {
+        stage('installdeps') {
             steps {
                 sh 'npm install'
+                // sh 'npm run bower'
+            }
+        }
+        stage('build') {
+            steps {
+                sh 'printenv'
+                sh 'npm run build'
             }
         }
         stage('Test') {
