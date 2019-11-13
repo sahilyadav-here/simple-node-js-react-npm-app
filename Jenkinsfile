@@ -6,12 +6,12 @@ pipeline {
         }
     }
     environment { 
-        Home='.'
+        CI = 'true'
     }
     stages {
         stage('installdeps') {
             steps {
-                sh 'npm install'
+                // sh 'npm install'
                 // sh 'npm run bower'
             }
         }
